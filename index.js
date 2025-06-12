@@ -33,7 +33,7 @@ exports.processfile = async (req, res) => {
     const dataBuffer = Buffer.from(JSON.stringify(messageData));
 
     // publish the message on the topic 
-    await pubsub.topic('assign-3-topic-sunil').publishMessage({ data: dataBuffer });
+    await pubsub.topic('topic-diksha').publishMessage({ data: dataBuffer });
 
     //published message
     console.log(`Published message: ${JSON.stringify(messageData)}`);
